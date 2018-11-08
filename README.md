@@ -2,8 +2,12 @@
 Tarea que genera un Sprite SVG basado en symbols a partir de un directorio con varios SVG.
 
 La recomendación de Sara Soueidan es que uses SVG en lugar de las fuentes (https://www.sarasoueidan.com/blog/icon-fonts-to-svg/),
-su recomendación es que uses SVG en lugar de las fuentes (https://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/).
+su recomendación es que uses SVG como sprite de simbolos (https://24ways.org/2014/an-overview-of-svg-sprite-creation-techniques/).
+
 Comparativa de las dos técnicas (https://css-tricks.com/icon-fonts-vs-svg/).
+
+
+Es la configuración mas básica que he creido necesaria. Para dotar de mas opciones consultar la documentación de las librerías utilizadas, principalmente: https://github.com/w0rm/gulp-svgstore
 
 ## Requisitos
 Tener NodeJS y NPM instalados y Gulp de manera global.
@@ -38,6 +42,7 @@ $ gulp
 ## Configuración
 
 En el archivo `./config.js` están definidas las opciones de configuración.
+
 Clave | Descripción | Valor por defecto
 --- | --- | ---
 **src**  | Directorio donde se encuentran los SVG  | `./src/svg`
@@ -56,7 +61,7 @@ Incluir el contenido del SVG generado en la cabecera del documento HTML donde se
 ```
 La referencia al identificador corresponde con el nombre de la imagen que se quiera mostrar.
 
-Tambien se pude hacer llamando a un archivo externo pero tiene limitaciones con algunos navegadores.
+También se pude hacer llamando a un archivo externo pero tiene limitaciones con algunos navegadores.
 
 ```HTML
 <svg class="class__icon--alert">
