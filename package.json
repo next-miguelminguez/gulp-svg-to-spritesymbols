@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/organizacion/nombre.git"
+    "url": "https://github.com/beeva-miguelminguez/gulp-svg-to-spritesymbols"
   },
   "scripts": {
     "start": "gulp"
